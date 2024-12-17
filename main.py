@@ -268,7 +268,7 @@ async def broadcast_message(m: UpdateNewMessage):
     broadcast_text = m.text.split("/broadcast", 1)[1].strip()
     
     # Fetch all users who have interacted with the bot
-    all_users = await bot.get_participants(-1001336746488)  # Replace with your group ID
+    all_users = await bot.get_participants(-1001830594381)  # Replace with your group ID
     
     # Iterate through all users and send the broadcast message
     for user in all_users:
@@ -575,7 +575,7 @@ async def handle_message(m: Message):
         )
     
     is_spam = db.get(m.sender_id)
-    if is_spam and m.sender_id not in [803003146]:
+    if is_spam and m.sender_id not in [6230356497]:
         if db.sismember(PREMIUM_USERS_KEY, m.sender_id):
             return await m.reply("You are spamming. Please wait 30 seconds and try again.")
         else:
@@ -630,7 +630,7 @@ async def handle_message(m: Message):
         return await hm.edit(
             f"Sorry! File is not supported for now. I can download only .mp4, .mkv and .webm files."
         )
-    if int(data["sizebytes"]) > 524288000 and m.sender_id not in [803003146]:
+    if int(data["sizebytes"]) > 524288000 and m.sender_id not in [6230356497]:
         return await hm.edit(
             f"Sorry! File is too big. I can download only 500MB and this file is of {data['size']} ."
         )
