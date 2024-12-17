@@ -1,25 +1,40 @@
 # API credentials
-API_ID = 123456
-API_HASH = "DWSC65HGFswcf56g8ergjhgdw54586"
-BOT_TOKEN = "123456:abcdekgfiJLKMNOPqjngghdf"
+API_ID = 21863401
+API_HASH = "5f7d3dc656c008c70bffdf7f4f9b8ebb"
+BOT_TOKEN = "6748708552:AAEya6awhAuxwhR7ujfPWsko7j1GkCjPWjk"
 
 # Redis configuration
 REDIS_CONFIG = {
-    "HOST": "redis-12345.c16.us-east-1-2.ec2.cloud.redislabs.com",
-    "PORT": 17713,
+    "HOST": "redis-15538.c10.us-east-1-2.ec2.redns.redis-cloud.com",
+    "PORT": 15538,
     "USERNAME": "default",
     "PASSWORD": "password",
     "DATABASE": "NTM"
 }
 
+ADMINS = [6230356497]
+OWNER_ID = 6230356497  # Replace with your Telegram user ID
+PRIVATE_CHAT_ID = -1001830594381  # CHAT WHERE YOU WANT TO STORE VIDEOS
+USER_CHANNEL = -1001830594381
+DUMP_CHANNEL = -1001830594381
+
+
+
+REDIS_HOST= "redis-15538.c10.us-east-1-2.ec2.redns.redis-cloud.com"
+REDIS_PORT= 15538
+USERNAME= "default"
+REDIS_PASSWORD= "K8jmK9liI9n9zt6JDUeGBMEBAkSfkLYS"
+DATABASE= "Sandeepjangra7077gmailcom-free-db"
+
+
+
 # Chat ID where videos will be stored
-PRIVATE_CHAT_ID = -100123456789
+PRIVATE_CHAT_ID = -1001830594381
 
 # Authentication cookie
-COOKIE = {
-    "COOKIE": "Paste your cookie here"
-}
-# COOKIE FOR AUTHENTICATION (get from chrome dev tools) ex: "PANWEB=1; csrfToken=; lang=en; TSID=; __bid_n=; _ga=; __stripe_mid=; ndus=; browserid==; ndut_fmt=; _ga_06ZNKL8C2E=" (don't use this)
+COOKIE = "TSID=spdLdUh58ULnFDMW3g4uKdO34wn8fUXV; __bid_n=1900348b10ea53ccb44207; _ga=GA1.1.1446765049.1718042060; browserid=ljsoL31c0RMaLe0G28v9v0_5rEEevWR5DZ3G9muGAgUJR-yEb9hOayOJ2tE=; lang=en; ndus=YdmvFCCteHuifZOm7NdgBd3RBWf_43KKR1g1QFuT; _gcl_au=1.1.362325700.1734106459; _tt_enable_cookie=1; _ttp=veI6YHr0_3tWp-_5xsEoZaMwdiG.tt.1; _ga_K6JMPYL99R=GS1.1.1734106458.1.1.1734106621.0.0.0; _ga_RSNVN63CM3=GS1.1.1734106463.1.1.1734106621.46.0.0; csrfToken=80XJEBxXog_TtDHITBve3LRf; ndut_fmt=9A5C25B6E5C7C6051BE2282D5256DC3460BA0803F7CDF61D61AAC1CBD7458968; ab_sr=1.0.1_YzY5OGI1YWVkNDNjZDU4ZDIwODE5MzU0MmZjNTJiMzMxMmNlZWE3M2M0NzRmMjIwNjRiZjA4N2U2ZTM0Yzg2MWY4ZWZlNDVkZjU2NzQ1OWM5MmVlNDlkNmNlODFmMzVmMGZmMjA3OWFiYmUwNTUxMDcxZTk4NzgzZTBkNmRlOTI4MGIzY2Q2YTZlYzE5ZTRkNTZhMjZlZWJjYmNkNTIxMA==; _ga_06ZNKL8C2E=GS1.1.1734418540.6.1.1734418789.44.0.0"
+
+# COOKIE FOR AUTHENTICATION (get from chrome dev tools) ex: "PANWEB=1; csrfToken=; lang=en; TSID=; __bid_n=; _ga=; __stripe_mid=; ndus=; browserid==; ndut_fmt=; _ga_06ZN>
 
 # List of bot admins
-ADMINS = [803003146]
+ADMINS = [6230356497]
