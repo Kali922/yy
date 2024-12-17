@@ -616,7 +616,7 @@ async def handle_message(m: Message):
         )
 
         return
-
+    track_message(m.sender_id)
     data = get_data(url)
     if not data:
         return await hm.edit("Sorry! API is dead or maybe your link is broken.")
@@ -626,7 +626,14 @@ async def handle_message(m: Message):
         and not data["file_name"].endswith(".mkv")
         and not data["file_name"].endswith(".Mkv")
         and not data["file_name"].endswith(".webm")
+        and not data["file_name"].endswith(".ts")
+        and not data["file_name"].endswith(".mov")
+        and not data["file_name"].endswith(".hevc")
+        and not data["file_name"].endswith(".png")
+        and not data["file_name"].endswith(".jpg")
+        and not data["file_name"].endswith(".jpeg")
     ):
+
         return await hm.edit(
             f"Sorry! File is not supported for now. I can download only .mp4, .mkv and .webm files."
         )
