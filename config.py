@@ -1,7 +1,7 @@
 # API credentials
 API_ID = 21863401
-API_HASH = "5f7d3dc656c008c70bffdf7f4f9b8ebb"
-BOT_TOKEN = "6748708552:AAEya6awhAuxwhR7ujfPWsko7j1GkCjPWjk"
+API_HASH = ""
+BOT_TOKEN = "67487085"
 
 # Redis configuration
 REDIS_CONFIG = {
